@@ -22,30 +22,21 @@ function askQuestion() {
   // TODO 1.2b: Ask candidate the question and assign the response as candidateAnswer //
 for (let i = 0; i < questions.length; i++){
   candidateAnswers = (input.question(questions[i]));
-console.log(`Your Answer: ${candidateAnswers}`);
-console.log(`Correct Answer: ${correctAnswers[i]} \n`);
-}
+
+    if (candidateAnswers == correctAnswers[i]){
+    console.log(`Your Answer: ${candidateAnswers}`);
+    console.log(`Correct Answer: ${correctAnswers[i]} \n`);
+     }
+    else {
+    console.log(`I'm sorry that is incorrect. Your answer was ${candidateAnswers}. The correct answer is ${correctAnswers[i]}. \n`);
+    }
+  }
 }
 
 function gradeQuiz(candidateAnswers) {
 
   // TODO 1.2c: Let the candidate know if they have answered the question correctly or incorrectly // 
-let numCorrect = 0;
-for (let j = 0; j<questions.length; j++){
-  if (candidateAnswers[j]== correctAnswers[j]){
-    numCorrect++
-   console.log(numCorrect); }
-  else{}
 
-
-}
-console.log(numCorrect);
-// if (candidateAnswers == correctAnswers){
-//   console.log("Correct!");
-//   }
-//   else{
-//     console.log("I'm sorry that is not correct.")
-//     }
   let grade;
   
 
