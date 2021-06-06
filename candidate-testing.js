@@ -45,7 +45,7 @@ function gradeQuiz(candidateAnswers) {
     else{
       console.log(`Overall grade: ${grade}% ${numCorrectAnswers} of ${questions.length} answers correct. \n Status: Failed`)
     }
-  return grade;
+  return console.log(grade);
 }
 
 function runProgram() {
