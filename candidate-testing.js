@@ -40,12 +40,12 @@ function gradeQuiz(candidateAnswers) {
 
   let grade = (numCorrectAnswers/questions.length)*100;
     if (grade >= 80){
-      console.log(`Congratulations you have passed!`)
+      console.log(`Overall grade: ${grade}% ${numCorrectAnswers} of ${questions.length} answers correct. \n Status: Passed`)
     }
     else{
-      console.log(`I'm sorry, you have failed. You need at lease 80% to pass.`)
+      console.log(`Overall grade: ${grade}% ${numCorrectAnswers} of ${questions.length} answers correct. \n Status: Failed`)
     }
-  return console.log(`Score: ${grade}%`);
+  return;
 }
 
 function runProgram() {
