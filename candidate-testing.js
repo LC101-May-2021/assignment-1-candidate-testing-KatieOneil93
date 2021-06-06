@@ -29,7 +29,7 @@ for (let i = 0; i < questions.length; i++){
      numCorrectAnswers++
      }
     else {
-    console.log(`I'm sorry that is incorrect. Your answer was ${candidateAnswers}. The correct answer is ${correctAnswers[i]}. \n`);
+    console.log(`Your answer: ${candidateAnswers}. Correct answer: ${correctAnswers[i]}. \n`);
     }
   }
 }
