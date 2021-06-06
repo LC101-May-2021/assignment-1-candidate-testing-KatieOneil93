@@ -29,7 +29,8 @@ for (let i = 0; i < questions.length; i++){
      numCorrectAnswers++
      }
     else {
-    console.log(`Your answer: ${candidateAnswers}. Correct answer: ${correctAnswers[i]}. \n`);
+    console.log(`Your answer: ${candidateAnswers}.`)
+    console.log(`Correct answer: ${correctAnswers[i]}. \n`);
     }
   }
 }
@@ -40,12 +41,12 @@ function gradeQuiz(candidateAnswers) {
 
   let grade = (numCorrectAnswers/questions.length)*100;
     if (grade >= 80){
-      console.log(`Overall grade: ${grade}% ${numCorrectAnswers} of ${questions.length} answers correct. \n Status: Passed`)
+      console.log(`Overall grade: ${grade}% (${numCorrectAnswers} of ${questions.length} answers correct) \nStatus: Passed`)
     }
     else{
-      console.log(`Overall grade: ${grade}% ${numCorrectAnswers} of ${questions.length} answers correct. \n Status: Failed`)
+      console.log(`Overall grade: ${grade}% (${numCorrectAnswers} of ${questions.length} answers correct) \nStatus: Failed`)
     }
-  return console.log(grade);
+  return grade;
 }
 
 function runProgram() {
